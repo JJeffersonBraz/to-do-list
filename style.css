@@ -4,13 +4,39 @@ body {
 }
 
 main {
-    width: 40%;
     margin: auto;
     padding: 30px 40px;
 }
 
+.container {
+    position: absolute;
+    width: 40%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    padding: 30px 40px;
+}
+
 #novastarefas {
+    position: relative;
     background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+#novastarefas input[text] {
+    width: 70%;
+    height: 40px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 10px;
+    color: #111111;
+}
+
+#novastarefas input[text]:focus {
+    border-color: #8052ec;
 }
 
 #tarefas {
