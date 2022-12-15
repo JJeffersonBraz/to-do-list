@@ -1,21 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     background: linear-gradient(#64a2e0, #1a1afa);
 }
 
 main {
+    position: absolute;
     margin: auto;
     padding: 30px 40px;
-}
-
-.container {
-    position: absolute;
     width: 40%;
-    margin: auto;
+    min-width: 450px;
     left: 0;
     right: 0;
     top: 30px;
-    padding: 30px 40px;
 }
 
 #novastarefas {
@@ -25,18 +27,32 @@ main {
     border-radius: 5px;
 }
 
-#novastarefas input[text] {
+input[type=text] {
+    position: relative;
     width: 70%;
-    height: 40px;
-    font-size: 15px;
+    height: 30px;
+    font-size: 1em;
     border: 2px solid #d1d3d4;
     border-radius: 5px;
     padding: 10px;
     color: #111111;
 }
 
-#novastarefas input[text]:focus {
-    border-color: #8052ec;
+input[type=text]:focus {
+    outline: none;
+    border-color: #4ad9b0;
+}
+
+input[type=button] {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 40px;
+    font-size: 1em;
+    background-color: #4ad9b0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #tarefas {
