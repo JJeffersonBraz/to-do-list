@@ -13,6 +13,6 @@ function add() {
             </div>
         `
         tarefa.value = ""
-        tarefa.focus
+        tarefa.focus()
     }
 }
